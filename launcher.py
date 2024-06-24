@@ -9,7 +9,7 @@ def launch(*args):
     pth = "./junqd"
     req_paths = [pth+"/",
                  pth+"/junq-daemon.conf",
-#                 pth+"/junq-daemon",
+                 pth+"/junq-daemon",
                  pth+"/yggstack"]
     
     for i in req_paths:
@@ -35,7 +35,7 @@ def launch(*args):
 
     time.sleep(0.5)
     f = open("junq-daemon.log", "w")
- #   prcss.append(subprocess.Popen("./junq-daemon", cwd=pth, stdout=f, stderr=f))
+    prcss.append(subprocess.Popen("./junq-daemon", cwd=pth, stdout=f, stderr=f))
     # a = subprocess.Popen("sleep 5".split())
     # a.
     # prcss.append(subprocess.Popen("sleep 5".split()))
