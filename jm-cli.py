@@ -182,11 +182,6 @@ class Messenger(cmd.Cmd):
             self.socket.close()
         return True
 
-
-# 201:b8df:c6ab:409e:82e3:a7f9:c0a5:f3a5
-
-
-
 def main():
     m = Messenger()
     try:
